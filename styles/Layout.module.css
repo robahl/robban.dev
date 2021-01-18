@@ -1,0 +1,10 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* Just for test - <3 large text */
+  font-size: 4rem;
+}
