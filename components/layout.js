@@ -1,10 +1,11 @@
 import React from 'react';
+import cn from 'classnames';
 import Head from 'next/head';
 import styles from '../styles/Layout.module.css';
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, className }) {
   return (
-    <div className={styles.container}>
+    <div className={cn(styles.container, className)}>
       <Head>
         <title>{title}</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />

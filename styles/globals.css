@@ -7,8 +7,12 @@ body {
 }
 
 a {
-  color: inherit;
+  color: rgb(20, 105, 233);
   text-decoration: none;
+}
+
+p {
+  margin: 0;
 }
 
 * {
