@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cn from 'classnames';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children, title, className }) {
+  useEffect(() => {
+    const appHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+    };
+    window.addEventListener('resize', appHeight);
+    appHeight();
+
+    return () => window.removeEventListener('resize', appHeight);
+  }, []);
+
   return (
     <div className={cn(styles.container, className)}>
       <Head>
