@@ -3,6 +3,7 @@
   height: 240px;
   animation-name: scale-up;
   animation-duration: 280s;
+  fill: var(--fg);
 }
 
 @keyframes scale-up {

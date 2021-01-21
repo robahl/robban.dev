@@ -2,4 +2,7 @@
 :root {
   --app-height: 100vh;
   --some-black: #2d2d2d;
+  --snow-white: #f3f3f3;
+  --fg: var(--some-black);
+  --bg: var(--snow-white);
 }
