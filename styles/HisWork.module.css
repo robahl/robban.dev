@@ -1,4 +1,6 @@
 .githubLogo {
+  width: 240px;
+  height: 240px;
   animation-name: scale-up;
   animation-duration: 280s;
 }
