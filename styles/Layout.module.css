@@ -4,8 +4,27 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
 
-  /* Just for test - <3 large text */
-  font-size: 4rem;
-  text-align: center;
+.frame {
+  width: calc(100vw - 2 * 20px);
+  height: calc(100vh - 2 * 20px);
+  border: 3px solid var(--some-black);
+  margin: 20px;
+  padding: 40px 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+.header a {
+  margin-right: 20px;
+  font-size: 1.2rem;
 }

@@ -1,0 +1,13 @@
+.githubLogo {
+  animation-name: scale-up;
+  animation-duration: 280s;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -7,11 +7,12 @@ body {
 }
 
 a {
-  color: rgb(20, 105, 233);
   text-decoration: none;
+  font-weight: bold;
+  color: var(--some-black);
 }
 
-p {
+p:first-child {
   margin: 0;
 }
 

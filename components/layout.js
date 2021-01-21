@@ -1,6 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Layout.module.css';
 
 export default function Layout({ children, title, className }) {
@@ -15,9 +16,14 @@ export default function Layout({ children, title, className }) {
         />
       </Head>
 
-      <header className={styles.header}>Some header</header>
-      <main>{children}</main>
-      <footer className={styles.footer}>Some footer</footer>
+      <div className={styles.frame}>
+        <header className={styles.header}>
+          <Link href="/the-developer">the developer</Link>
+          <Link href="/his-work">his work</Link>
+        </header>
+        <main>{children}</main>
+        <footer className={styles.footer}></footer>
+      </div>
     </div>
   );
 }
