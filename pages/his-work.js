@@ -5,7 +5,7 @@ import styles from '../styles/HisWork.module.css';
 export default function () {
   return (
     <Layout title="his work">
-      <a href="https://github.com/robahl">
+      <a href="https://github.com/robahl" target="__blank">
         <svg
           className={styles.githubLogo}
           width="100%"
