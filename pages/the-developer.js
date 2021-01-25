@@ -1,7 +1,7 @@
 import Layout from '../components/layout';
 import { setTheme } from '../utils/set-theme';
 
-export default function () {
+export default function TheDeveloper() {
   return (
     <Layout title="the developer">
       <p>

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Layout from '../components/layout';
 import styles from '../styles/HisWork.module.css';
 
-export default function () {
+export default function HisWork() {
   return (
     <Layout title="his work">
       <a href="https://github.com/robahl" target="__blank">
